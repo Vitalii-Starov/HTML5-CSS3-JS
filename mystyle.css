@@ -1,0 +1,138 @@
+body{
+    background: gray;
+    border-left: 20%;
+    border-right: 20%;
+    border-top: 0%;
+    border-radius: 10px;
+    margin-left: 20%;
+    margin-right:20%;
+    margin-top:0;
+    text-align: justify;
+    min-width: 800px;
+	
+}
+
+img{
+    float: left; 
+}
+
+h1{
+    bottom: 80px;/* отступ снизу */
+    left: 300px;/*отступ слева  */
+	padding-bottom: -1px;
+}
+
+
+/* общие стили для классов: */
+.top,
+.paragraph,
+.foot,
+.web,
+.html,
+.css,
+.js,
+.calcul,
+.test,
+.wrapper{
+    background-color: white;/* фон блоков */
+    border-radius: 10px;/* закругленные углы */
+    margin-top: 0;/* отступ сверху */
+    margin-bottom: 0;/*отстур снизу */
+    padding: 5px; /*внутренний отступ  */
+    max-width: 800px;/*максимальная ширина   */
+    margin-left: auto;/*вненший отступ с лева   */
+	margin-right: auto;/*внешний отступ с права */
+	border-color: white;
+	
+	
+}
+
+/* класс страницы index.html */
+.paragraph{
+    text-align: justify;/*выравнивание по центру */
+    padding: 5px;/* ширина */
+}
+
+/* класс нижнего блока(нижний колонтитул) сайта  */
+.foot{
+    text-align: center;/*выравнивание текста поцентру   */
+}
+/*********** стили для калькулятора*************/
+.calcul table {
+     display: table;/* Определяет, что элемент является блочной таблицей */
+     margin: 0 auto;/*внешний отступ */
+     clear: both;/*Отменяет обтекание элемента одновременно с правого и левого края*/
+}
+
+.calcul button{
+    text-align: center;/* выравнивание цифт   */
+    width: 60px;/* ширина кнопок   */
+    height: 25px;/*высота кнопок    */
+}
+/* стиль для понели ввода цифр   */
+.calcul table .text input{
+    width: 315px;/* ширина кнопок   */
+    text-align: right;/* вводим текст с права  */
+	height: 25px;
+}
+/*  стиль для кнопки "="  */
+.calcul table .equally button {
+    height: 55px;/* высота кнопки */
+}
+/* стиль для кнопки "0"   */
+.calcul table .zero button {
+    width: 125px;/* ширина кнопки */
+}
+
+/* класс страницы HTML5.html */
+.html{
+    text-align: justify;/* выравнивание текста на всю ширину блока */
+    font-size: 16px;/*размер шрифта*/
+    padding: 5px;/*Внутренний отступ*/
+}
+
+/* класс страницы HTML5.html */
+.add {
+    font-size: 12px;/*размер шрифта*/
+    float: right; /* Обтекание врезки по правому краю */
+    width: 200px; /* Ширина врезки */
+    background: #A9A9A9; /* Цвет фона */
+    padding: 5px; /* Поля вокруг картинки */
+    margin: 5px; /* Отступы вокруг рисунка */
+    text-align: justify;/* выравнивание текста на всю ширину блока*/
+	border-radius: 10px;/* закругленные углы */
+}
+
+
+/* меню*/
+
+
+.menu ul  li{
+    position:relative;/* относительно его исходного места*/
+    display:inline-table;
+
+
+}
+
+.menu li a{
+    border-bottom: none;
+	padding: 2px;/*Отступы для пункта*/
+    
+}
+
+.menu li ul{
+    display: none;
+	border: 1px solid black;
+	position: absolute;
+    background-color: white;
+    padding: 2px ;
+    width: 70px;
+	border-radius: 5px;
+
+
+}
+.menu li:hover ul{
+    display: block;
+	border-radius: 10px;
+	
+}
