@@ -3,12 +3,13 @@
 	<head>
 		<title> Д/З по HTML5</title>
 		<meta charset="utf-8" />
+		<link rel="stylesheet" href="mystyle.css" />
 	</head>
 	<body>
-		<header>
-			<img src="webLogo.PNG" alt="Изображение" width="180" />
+		<header class="top">
+			<img src="webLogo.PNG" alt="Изображение" width="240" height="100" />
 			<h1>Основы Web-технологий</h1>
-				<nav>
+				<nav class="menu">
 					<ul>
 						<li><a href="index.html">Главная</a></li>
 						<li>
@@ -25,47 +26,47 @@
 				</nav>
 		</header>
 		<article>
-			<form name="calculator">
-			<table border="1">
+			<form name="calculator" class="calcul">
+			<table>
 				<tr>
-					<td colspan="5">
-						<input type="text">
+					<td colspan="5" class="text">
+						<input type="text" name="text">
 					</td>
 				</tr>
 				<tr>
-					<td><button type="button" name="seven">7</button></td>
-					<td><button type="button" name="eight">8</button></td>
-					<td><button type="button" name="nine">9</button></td>
-					<td><button type="button" name="div">/</button></td>
-					<td><button type="button" name="clear">C</button></td>
+					<td><button type="button" name="button">7</button></td>
+					<td><button type="button" name="button">8</button></td>
+					<td><button type="button" name="button">9</button></td>
+					<td><button type="button" name="button">/</button></td>
+					<td><button type="button" name="button">C</button></td>
 				</tr>
 				<tr>
-					<td><button type="button" name="four">4</button></td>
-					<td><button type="button" name="five">5</button></td>
-					<td><button type="button" name="six">6</button></td>
-					<td><button type="button" name="mul">*</button></td>
-					<td><button type="button" name="&plusmn;">&plusmn;</button></td>
+					<td><button type="button" name="button">4</button></td>
+					<td><button type="button" name="button">5</button></td>
+					<td><button type="button" name="button">6</button></td>
+					<td><button type="button" name="button">*</button></td>
+					<td><button type="button" name="button">&plusmn;</button></td>
 				</tr>
 				<tr>
-					<td><button type="button" name="one">1</button></td>
-					<td><button type="button" name="two">2</button></td>
-					<td><button type="button" name="three">3</button></td>
-					<td><button type="button" name="sub">-</button></td>
-					<td rowspan="2"><button type="button" name="doit">=</button></td>
+					<td><button type="button" name="button">1</button></td>
+					<td><button type="button" name="button">2</button></td>
+					<td><button type="button" name="button">3</button></td>
+					<td><button type="button" name="button">-</button></td>
+					<td rowspan="2" class="equally"><button type="button" name="button">=</button></td>
 				</tr>
 				<tr>
-					<td colspan="2"><button type="button" name="zero">0</button></td>
-					<td><button type="button" name="dot">.</button></td>
-					<td><button type="button" name="add">+</button></td>
+					<td colspan="2" class="zero"><button type="button" name="button">0</button></td>
+					<td><button type="button" name="button">.</button></td>
+					<td><button type="button" name="button">+</button></td>
 				</tr>
 			</table>
 			</form>
 		</article>
-		<footer>
+		<footer class="foot">
 			<address>
 				<a href="mailto:mail@mail">Пишите: mail@mail</a>
 			</address>
-			&copy; Фамилия И. О., год
+			&copy; Старов Виталий, 2017 год
 		</footer>
 	</body>
 </html>
