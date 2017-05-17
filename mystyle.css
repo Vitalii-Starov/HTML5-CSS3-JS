@@ -64,7 +64,7 @@ h1{
      clear: both;/*Отменяет обтекание элемента одновременно с правого и левого края*/
 }
 
-.calcul button{
+.calcul input{
     text-align: center;/* выравнивание цифт   */
     width: 60px;/* ширина кнопок   */
     height: 25px;/*высота кнопок    */
@@ -76,13 +76,14 @@ h1{
 	height: 25px;
 }
 /*  стиль для кнопки "="  */
-.calcul table .equally button {
+.calcul table .ravno input {
     height: 55px;/* высота кнопки */
 }
 /* стиль для кнопки "0"   */
-.calcul table .zero button {
+.calcul table .zero input {
     width: 125px;/* ширина кнопки */
 }
+
 
 /* класс страницы HTML5.html */
 .html{

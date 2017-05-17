@@ -3,7 +3,8 @@
 	<head>
 		<title> Д/З по HTML5</title>
 		<meta charset="utf-8" />
-		<link rel="stylesheet" href="mystyle.css" />
+		<link rel="stylesheet" href="mystyle.css">
+		<script src="calcul.js"></script>
 	</head>
 	<body>
 		<header class="top">
@@ -26,40 +27,42 @@
 				</nav>
 		</header>
 		<article>
-			<form name="calculator" class="calcul">
-			<table>
-				<tr>
-					<td colspan="5" class="text">
-						<input type="text" name="text">
-					</td>
-				</tr>
-				<tr>
-					<td><button type="button" name="button">7</button></td>
-					<td><button type="button" name="button">8</button></td>
-					<td><button type="button" name="button">9</button></td>
-					<td><button type="button" name="button">/</button></td>
-					<td><button type="button" name="button">C</button></td>
-				</tr>
-				<tr>
-					<td><button type="button" name="button">4</button></td>
-					<td><button type="button" name="button">5</button></td>
-					<td><button type="button" name="button">6</button></td>
-					<td><button type="button" name="button">*</button></td>
-					<td><button type="button" name="button">&plusmn;</button></td>
-				</tr>
-				<tr>
-					<td><button type="button" name="button">1</button></td>
-					<td><button type="button" name="button">2</button></td>
-					<td><button type="button" name="button">3</button></td>
-					<td><button type="button" name="button">-</button></td>
-					<td rowspan="2" class="equally"><button type="button" name="button">=</button></td>
-				</tr>
-				<tr>
-					<td colspan="2" class="zero"><button type="button" name="button">0</button></td>
-					<td><button type="button" name="button">.</button></td>
-					<td><button type="button" name="button">+</button></td>
-				</tr>
-			</table>
+			<form name="calc" class="calcul">
+				<table>
+					<tr>
+						<td colspan="5" class="text">
+							<input type="text"  id="outputField" value=""  maxlength="10"><!--дисплей-->
+						</td>
+					</tr>
+					<tr>
+						<td ><input type="button" id="but_7" value="7" ></td>
+						<td ><input type="button" id="but_8" value="8" ></td>
+						<td ><input type="button" id="but_9" value="9" ></td>
+						<td ><input type="button" id="div" value="/" ></td>
+						<td ><input type="button" id="c" value="c" ></td>
+
+					</tr>
+					<tr>
+						<td ><input type="button" id="but_4" value="4" ></td>
+						<td ><input type="button" id="but_5" value="5" ></td>
+						<td ><input type="button" id="but_6" value="6" ></td>
+						<td ><input type="button" id="mult" value="*" ></td>
+						<td ><input type="button" id="minusplus" value="&plusmn;" ></td>
+					</tr>
+					<tr>
+						<td ><input type="button" id="but_1" value="1"></td>
+						<td ><input type="button" id="but_2" value="2"></td>
+						<td ><input type="button" id="but_3" value="3"></td>
+						<td ><input type="button" id="sub" value="-"></td>
+						<td rowspan="2" class="ravno"><input type="button" id="equally" value="="></td>
+					</tr>
+					<tr >
+						<td colspan="2" class="zero"><input type="button" id="but_0" value="0"></td>
+						<td ><input type="button" id="plus" value="+"></td>
+						<td ><input type="button" id="dot" value="."></td>
+					</tr>
+				</table>
+
 			</form>
 		</article>
 		<footer class="foot">
