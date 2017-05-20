@@ -4,6 +4,7 @@
 		<title> Д/З по HTML5</title>
 		<meta charset="utf-8" />
 		<link rel="stylesheet" href="mystyle.css" />
+		<script src="testjs.js"></script>
 	</head>
 	<body>
 		<header class="top">
@@ -26,34 +27,34 @@
 				</nav>
 		</header>
 		<article>
-			<form name="test" class="test">
+			<form name="tests" class="test">
 			<div>Какой тег предназначен для создания ссылок:</div>
-				<input type="radio" name="a"/>&lt;a&gt;<br/>
-				<input type="radio" name="a"/>&lt;a/&gt;<br/>
-				<input type="radio" name="a"/>&lt;ref&gt;<br/>
-				<input type="radio" name="a"/>&lt;ref/&gt;<br/><br/>
+				<input type="radio" name="links" value="a" />&lt;a&gt;<br/> <!--Ответ-->
+				<input type="radio" name="links" value="a/" />&lt;a/&gt;<br/> 
+				<input type="radio" name="links" value="ref" />&lt;ref&gt;<br/>
+				<input type="radio" name="links" value="ref/" />&lt;ref/&gt;<br/><br/>
 			<div>Какой тег предназначен для создания нумерованного списка:</div>
-				<input type="radio" name="ol"/>&lt;li&gt;<br/>
-				<input type="radio" name="ol"/>&lt;dl&gt;<br/>
-				<input type="radio" name="ol"/>&lt;ol&gt;<br/>
-				<input type="radio" name="ol"/>&lt;ul&gt;<br/><br/>
+				<input type="radio" name="spis" value="li" />&lt;li&gt;<br/>
+				<input type="radio" name="spis" value="dl" />&lt;dl&gt;<br/>
+				<input type="radio" name="spis" value="ol" />&lt;ol&gt;<br/> <!--Ответ-->
+				<input type="radio" name="spis" value="ul" />&lt;ul&gt;<br/><br/>
 			<div>Какой тег предназначен для передачи служебной информации браузеру:</div>
-				<input type="radio" name="meta"/>&lt;info&gt;<br/>
-				<input type="radio" name="meta"/>&lt;info/&gt;<br/>
-				<input type="radio" name="meta"/>&lt;meta&gt;<br/>
-				<input type="radio" name="meta"/>&lt;meta/&gt;<br/><br/>
+				<input type="radio" name="braus" value="info" />&lt;info&gt;<br/>
+				<input type="radio" name="braus" value="info/" />&lt;info/&gt;<br/>
+				<input type="radio" name="braus" value="meta" />&lt;meta&gt;<br/> 
+				<input type="radio" name="braus" value="meta/" />&lt;meta/&gt;<br/><br/> <!--Ответ-->
 			<div>Какие теги используются при создании таблицы:</div>
-				<input type="checkbox" name="td"/>&lt;bodyt&gt;<br/>
-				<input type="checkbox" name="td"/>&lt;td&gt;<br/>
-				<input type="checkbox" name="td"/>&lt;caption&gt;<br/>
-				<input type="checkbox" name="td"/>&lt;column&gt;<br/><br/>
+				<input type="checkbox" name="tab" value="bodyt" />&lt;bodyt&gt;<br/>
+				<input type="checkbox" name="tab" value="td" />&lt;td&gt;<br/> <!--Ответ-->
+				<input type="checkbox" name="tab" value="caption" />&lt;caption&gt;<br/> <!--Ответ-->
+				<input type="checkbox" name="tab" value="column" />&lt;column&gt;<br/><br/>
 			<div>Какие атрибуты используются при создании форм:</div>
-				<input type="checkbox" name="action"/>autocomplete<br/>
-				<input type="checkbox" name="action"/>action<br/>
-				<input type="checkbox" name="action"/>charset<br/>
-				<input type="checkbox" name="action"/>validate<br/><br/>
+				<input type="checkbox" name="form" value="autocomplete" />autocomplete<br/> <!--Ответ-->
+				<input type="checkbox" name="form" value="action" />action<br/> <!--Ответ-->
+				<input type="checkbox" name="form" value="charset" />charset<br/>
+				<input type="checkbox" name="form" value="validate" />validate<br/><br/>
 			<div>
-				<button type="button" name="res">Результат</button><br/><br/>
+				<input type="button" name="res" value="Результат" onclick="test2017()">
 			</div>
 			</form>
 		</article>

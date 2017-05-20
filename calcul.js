@@ -41,7 +41,7 @@ function equally() {
             break;
         case "/":
             if (Number2 == 0) {
-                alert("На 0 делить нельзя!");
+                alert("На 0 делить запрещено!");
             }
             else {
                 Operetion = Number1 / Number2;
