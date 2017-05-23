@@ -33,16 +33,16 @@ h1{
 .wrapper{
     background-color: white;/* фон блоков */
     border-radius: 10px;/* закругленные углы */
-    margin-top: 0; /* убираем пробелы между абзацами */
-    margin-bottom: 0; /* убираем пробелы между абзацами */
     padding: 4px; /*внутренний отступ  */
     min-width:800px;
     max-width: 800px;
-    margin-left: auto;/*вненший отступ с лева   */
-	margin-right: auto;/*внешний отступ с права */
 	border-color: white;
 	line-height: 1em;
     text-align: justify;/*выравнивание по центру */
+	margin: auto;
+	font-size: 15px;
+	 
+
 }
 
 /* класс страницы index.html */
@@ -54,9 +54,11 @@ h1{
 
 .web {
 	line-height: 1em;
-	margin-top: 0; /* убираем пробелы между абзацами */
-    margin-bottom: 0; /* убираем пробелы между абзацами */
-	padding: 4px; /*внутренний отступ  */
+	padding: 4px; /*внутренний отступ  */ 
+	
+}
+.redy {
+	margin: 0;
 }
 
 /* класс нижнего блока(нижний колонтитул) сайта  */
@@ -113,15 +115,14 @@ h1{
 
 /* меню*/
 .menu{
-
     padding-top: 20px;
+	margin: -10px;
 
 }
 
 .menu ul  li{
     position:relative;/* относительно его исходного места*/
     display:inline-table;
-
 
 }
 
@@ -139,7 +140,6 @@ h1{
     width: 70px;
     height: 50px;
 	border-radius: 1px;
-
 
 }
 .menu li:hover ul{
